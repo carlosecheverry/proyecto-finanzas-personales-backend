@@ -16,8 +16,7 @@ const GastoSchema = new mongoose.Schema({
     descripcion: {
         type: String, 
         required: true,
-    },{
-    timestamps: true,
+    },
 });
 
 const Gasto = mongoose.model('Gasto', GastoSchema);
