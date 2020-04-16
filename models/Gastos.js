@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-const GastosSchema = new mongoose.Schema({
+//Schemas
+
+// const ObjectId = mongoose.Schema.Types.ObjectId;
+
+const GastoSchema = new mongoose.Schema({
     nombre: {
         type: String,
         required: true,
@@ -12,7 +16,7 @@ const GastosSchema = new mongoose.Schema({
     descripcion: {
         type: String, 
         required: true,
-    }, {
+    },{
     timestamps: true,
 });
 
